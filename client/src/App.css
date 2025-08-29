@@ -1,0 +1,256 @@
+/* #root styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Logo styles */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop_shadow(0 0 2em #61dafbaa);
+}
+
+/* Keyframe animation for logo spin */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media query for reduced motion preference */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card styles */
+.card {
+  padding: 2em;
+}
+
+/* Read the docs styles */
+.read-the-docs {
+  color: #aaa; /* Warna teks lebih terang untuk mode gelap */
+}
+
+/* Global body styles for dark mode */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #1a202c; /* Latar belakang gelap (dark gray/navy) */
+  color: #f7fafc; /* Teks putih keabu-abuan */
+  padding: 1rem;
+}
+
+/* Responsive padding for body */
+@media (min-width: 640px) { /* sm breakpoint */
+  body {
+    padding: 1.5rem;
+  }
+}
+@media (min-width: 768px) { /* md breakpoint */
+  body {
+    padding: 2rem;
+  }
+}
+
+/* Styling for the main CRUD container in dark mode */
+.crud-container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2d3748; /* Latar belakang container sedikit lebih terang dari body */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.3); /* Bayangan lebih gelap untuk kontras */
+  color: #f7fafc; /* Teks putih keabu-abuan untuk container */
+}
+
+/* Responsive padding for crud-container */
+@media (min-width: 768px) { /* md breakpoint */
+  .crud-container {
+    padding: 2rem;
+  }
+}
+
+/* Styling for the main page title (h2) in dark mode */
+h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #9f7aea; /* Warna ungu yang cerah untuk judul */
+}
+
+/* Styling for sub-titles (form and item list) (h3) in dark mode */
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #b794f4; /* Warna ungu yang sedikit lebih lembut */
+  border-bottom: 2px solid #6b46c1; /* Border bawah yang lebih gelap */
+  padding-bottom: 0.5rem;
+}
+
+/* Styling for forms in dark mode */
+form {
+  margin-bottom: 2.5rem;
+  background-color: #4a5568; /* Latar belakang form lebih gelap */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for each input group within a form */
+form div {
+  margin-bottom: 1rem;
+}
+
+/* Styling for form labels in dark mode */
+form label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #e2e8f0; /* Teks label lebih terang */
+  margin-bottom: 0.25rem;
+}
+
+/* Styling for text input fields in dark mode */
+form input[type="text"] {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #718096; /* Border input lebih gelap */
+  border-radius: 0.375rem;
+  outline: none;
+  background-color: #2d3748; /* Latar belakang input gelap */
+  color: #f7fafc; /* Teks input putih */
+  transition: all 200ms ease-in-out;
+}
+
+/* Focus styles for text input fields in dark mode */
+form input[type="text"]:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #9f7aea; /* Cincin fokus ungu */
+}
+
+/* Styling for form submit buttons in dark mode */
+form button[type="submit"] {
+  padding: 0.5rem 1.5rem;
+  background-color: #805ad5; /* Tombol ungu */
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+/* Hover and focus styles for form submit buttons in dark mode */
+form button[type="submit"]:hover {
+  background-color: #6b46c1; /* Hover tombol ungu lebih gelap */
+}
+form button[type="submit"]:focus {
+  box-shadow: 0 0 0 2px #9f7aea, 0 0 0 4px rgba(159, 122, 234, 0.5);
+  outline-offset: 2px;
+}
+
+/* Styling for tables in dark mode */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for table header in dark mode */
+thead {
+  background-color: #6b46c1; /* Header tabel ungu gelap */
+  color: #ffffff;
+}
+
+/* Styling for table headers and data cells */
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+/* Styling for table headers */
+th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+/* Styling for table body rows in dark mode */
+tbody tr {
+  background-color: #2d3748; /* Baris tabel gelap */
+  color: #f7fafc; /* Teks baris putih */
+}
+
+/* Alternate row background for better readability in dark mode */
+tbody tr:nth-child(even) {
+  background-color: #4a5568; /* Baris genap sedikit lebih terang */
+}
+
+/* Hover effect for table rows in dark mode */
+tbody tr:hover {
+  background-color: #556075; /* Hover baris lebih terang */
+  transition: all 200ms ease-in-out;
+}
+
+/* Styling for table data cells in dark mode */
+td {
+  border-bottom: 1px solid #4a5568; /* Border bawah sel lebih gelap */
+}
+
+/* Styling for buttons inside table (Edit and Delete) in dark mode */
+td button {
+  padding: 0.25rem 1rem;
+  border-radius: 0.375rem;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 200ms ease-in-out;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  margin-right: 0.5rem;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Specific styling for the Edit button in dark mode */
+td button:first-of-type {
+  background-color: #d69e2e; /* Tombol edit kuning tua */
+}
+td button:first-of-type:hover {
+  background-color: #b7791f; /* Hover tombol edit kuning lebih gelap */
+}
+td button:first-of-type:focus {
+  box-shadow: 0 0 0 2px #d69e2e, 0 0 0 4px rgba(214, 158, 46, 0.5);
+}
+
+/* Specific styling for the Delete button in dark mode */
+td button:last-of-type {
+  background-color: #e53e3e; /* Tombol delete merah */
+}
+td button:last-of-type:hover {
+  background-color: #c53030; /* Hover tombol delete merah lebih gelap */
+}
+td button:last-of-type:focus {
+  box-shadow: 0 0 0 2px #e53e3e, 0 0 0 4px rgba(229, 62, 62, 0.5);
+}
